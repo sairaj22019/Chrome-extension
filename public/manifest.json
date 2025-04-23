@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "My Chrome Extension",
+    "version": "1.0.0",
+    "description": "A simple Chrome extension for summarizing pages",
+    "author": "XYZ",
+    "permissions": [
+        "activeTab","scripting","sidePanel"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "My Chrome Extension"
+    } ,
+    "icons": {
+        "16": "icon16.png",
+        "32": "icon32.png",
+        "128": "icon128.png"
+    },
+    "side_panel":{
+        "default_path": "index.html"
+    }
+}

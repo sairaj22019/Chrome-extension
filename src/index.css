@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit",serif;
+}
+
+.summary-area{
+  position: relative;
+  padding-bottom: 20px;
+  height: 90vh;
+  overflow-y: auto;
+}
+
+.heading{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 20px;
+  font-size: 20px;
+  top: 25%;
+}
+
+.summarize-button{
+  position: sticky;
+  background-color: lightpink;
+  border-radius: 10px;
+  height: 40px;
+  min-height: 40px;
+  width: 100px;
+  margin: 0 20px;
+}
