@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "My Chrome Extension",
-    "version": "1.0.0",
-    "description": "A simple Chrome extension for summarizing pages",
+    "name": "Flamingo",
+    "version": "2.0.0",
+    "description": "A simple chrome extension for summarizing pages",
     "author": "XYZ",
     "permissions": [
         "activeTab","scripting","sidePanel"
@@ -11,9 +11,15 @@
         "http://*/*",
         "https://*/*"
     ],
+    "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+    ],
     "action": {
         "default_popup": "index.html",
-        "default_title": "My Chrome Extension"
+        "default_title": "Flamingo"
     } ,
     "icons": {
         "16": "icon16.png",
