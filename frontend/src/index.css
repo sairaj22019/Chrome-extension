@@ -63,3 +63,10 @@
   margin: 25px 0 25px 20px;
   font-size: 18px;
 }
+
+.lottieanimation{
+  height: 30px;
+  width: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}

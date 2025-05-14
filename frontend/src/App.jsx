@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Lottie from "lottie-react";
-import loadingAnimation from "C:/Programming/React/chrome_extension/chrome_extension/public/Animation - 1747194683619.json";
+import LoadingAnimation from "./assets/Animation - 1747194683619.json";
 import { useRef } from "react";
 
 function App() {
@@ -58,7 +58,7 @@ function App() {
         <div className="bottom-bar">
           <button className="summarize-button" onClick={handleClick}>
             {loading ? (
-              <Lottie className="lottieanimation" animationData={loadingAnimation}/>
+              <Lottie className="lottieanimation" animationData={LoadingAnimation}/>
             ) : (
               "Summarize"
             )}
