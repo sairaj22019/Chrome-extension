@@ -1,5 +1,4 @@
   import { useState } from "react";
-
   function App() {
     chrome.sidePanel.setPanelBehavior({ openPanelOnActionClick: true });
     const [summaryText, setSummaryText] = useState("");
@@ -9,7 +8,12 @@
       chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
         const url = tabs[0].url;
         const xhr = new XMLHttpRequest();
+        if(url.includes("youtube.com")){
         xhr.open("GET", "http://127.0.0.1:5000/summary?url=" + url, true);
+        }
+        else{
+        xhr.open("GET", "http://127.0.0.1:5000/websummary?url=" + url, true);
+        }
         xhr.onload = function () {
           const text = xhr.responseText;
           if(xhr.status == 200){
